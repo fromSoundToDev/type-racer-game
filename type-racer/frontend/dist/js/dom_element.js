@@ -8,20 +8,26 @@ const badgeCustomEL = document.querySelector('.badgeCustom');
 // card Elements 
 const lunchDescriptionEl = document.querySelector('.lunchDescription')
 const StartEl = document.querySelector('.start')
+const titlesEl = document.querySelector('.lunchCard-titles')
 
 // functions that filled the card 
 
 const showTrainCard = () => {
 
-    lunchDescriptionEl.innerHTML = card_data.text[0]
+    lunchDescriptionEl.innerHTML = card_data.text[2]
     StartEl.innerHTML = card_data.btnContent 
+    titlesEl.innerHTML = card_data.titles[0]
          
 }
 const showBotCard = () => {
-
+    lunchDescriptionEl.innerHTML = card_data.text[1]
+    StartEl.innerHTML = card_data.btnContent 
+    titlesEl.innerHTML = card_data.titles[1]
 }
 const showCustomCard = () => {
-
+    lunchDescriptionEl.innerHTML = card_data.text[0]
+    StartEl.innerHTML = card_data.btnContent 
+    titlesEl.innerHTML = card_data.titles[2]
 }
 
 
@@ -31,6 +37,6 @@ const showCustomCard = () => {
 
 // adding events to the dom elements
 
-badgeTrainEL.addEventListner('click', showTrainCard);
+badgeTrainEL.addEventListener('click', showTrainCard);
 badgeBotEL.addEventListener('click', showBotCard);
 badgeCustomEL.addEventListener('click', showCustomCard);
