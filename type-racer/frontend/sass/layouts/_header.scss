@@ -1,0 +1,16 @@
+@use '../base/variables' as *;
+@use '../base/typo' as *;
+@use '../base/mixins' as *;
+
+.header .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $secondary-color;
+    background-color: bisque;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.header{
+    padding: 0 .6rem ;
+}

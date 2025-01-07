@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+@mixin big-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $secondary-color;
+}
+@mixin mid-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $secondary-color;
+}
+@mixin paragraph {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $secondary-color;
+}
+@mixin badge {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $secondary-color;
+  background-color: $tertiary-color;
+  border-radius: $border-radius;
+  border: $border;
+}

@@ -1,0 +1,56 @@
+@use 'variables';
+@use 'typo' as *;
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: variables.$secondary-color;
+    height: 100vh;
+    font-family: poppins;
+    
+   
+  }
+  
+  a {
+    text-decoration: none;
+    color: variables.$secondary-color;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Clearfix */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Responsive */
+  @mixin respond($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 576px) { @content; }
+    }
+    @else if $breakpoint == medium {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $breakpoint == large {
+      @media (max-width: 992px) { @content; }
+    }
+    @else if $breakpoint == xlarge {
+      @media (max-width: 1200px) { @content; }
+    }
+  }  

@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+
+
+.sidebar::-webkit-scrollbar {
+    width: 5px; 
+  
+  }
+  
+ 
+ .sidebar::-webkit-scrollbar-track {
+    background: #b4b3b3f6; /* Light gray background */
+   
+ 
+  }
+  
+  /* Thumb (scroll handle) */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: bisque; /* Gray scroll thumb */
+   
+   
+  }
+  
+  /* Thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker gray on hover */
+  }
+  
+  /* Buttons (optional, for older designs) */
+  ::-webkit-scrollbar-button {
+    background: #ffffffba;
+  }
+  

@@ -1,0 +1,36 @@
+@use 'variables' as *;
+.main-container{
+    display: grid;
+    grid-template-areas: 
+        "h h h"
+        "s m m";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 300px 1fr 1fr;
+    height: 100%;
+    
+}
+.header{
+    grid-area: h;
+    background-color: $primary-color;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.sidebar{
+    grid-area: s;
+    background-color:  $primary-color;
+    border-right: 1px solid black;
+    overflow-y: scroll;
+    max-height: calc(100vh - 80px);
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.main{
+    grid-area: m;
+    background-color:  $primary-color
+    
+}

@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "type":"module",
+  "main": "webpack.config.js",
+  "scripts": {
+   "build:css": "sass sass/main.scss:dist/css/main.css --style=compressed",
+    "watch:css": "sass --watch sass/main.scss:dist/css/index.css",
+    "build:js": "webpack --mode production",
+    "watch:js": "webpack --watch --mode development",
+    "build": "npm run build:css && npm run build:js",
+    "watch": "npm run watch:css & npm run watch:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.83.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
