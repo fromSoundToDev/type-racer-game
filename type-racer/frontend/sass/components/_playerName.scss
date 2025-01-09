@@ -1,0 +1,38 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.player {
+    .player-name {
+     
+      height: 80px;
+      width: 100%;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      position: relative;
+  
+      p {
+        background-color: bisque;
+        display: inline-block;
+        position: relative;
+        padding: 10px 40px; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+  
+        .square {
+          width: 0;
+          height: 0;
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid transparent;
+          border-left: 20px solid bisque; 
+          position: absolute;
+          top: 50%;
+          right: -20px; 
+          transform: translateY(-50%); 
+        }
+      }
+    }
+  }
+  
+  

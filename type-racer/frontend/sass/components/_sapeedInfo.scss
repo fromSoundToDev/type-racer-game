@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.race-counter{
+    width: 18%;
+    height: 80px;
+    border-radius: 8px;
+    background-color: burlywood;
+}

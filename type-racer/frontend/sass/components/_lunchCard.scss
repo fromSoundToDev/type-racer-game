@@ -13,7 +13,7 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     position: relative;
     top: 150px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -21,11 +21,54 @@
         margin-bottom: 1rem;
         
     }
+    .lunchCard-btn{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        .select-groupe{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 2px;
+            #botName{
+                padding: 10px 15px; 
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            #botSpeed{
+                padding: 10px 15px;
+                 border-radius: 10px;
+                 cursor: pointer;
+            }
+        }
+        .btn-groupe{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 2px;
+            #addBot{
+                padding: 10px 15px; 
+                border-radius: 10px;
+                width: 45%;
+                cursor: pointer;
+            }
+            #remooveBot{
+                padding: 10px 15px;
+                 border-radius: 10px;
+                 width: 45%;
+                 cursor: pointer;
+            }
+        }
+    }
     .start{
         padding: .5rem;
         font-weight: 400;
-        width: 5rem;
-        border-radius: 5px;
+        width: 8rem;
+        border-radius: 10px;
         border: none;
         cursor: pointer;
         &:hover{

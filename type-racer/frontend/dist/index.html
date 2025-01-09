@@ -66,7 +66,7 @@
                 <option value="">rodrig</option>
                 <option value="">richard</option>
               </select>
-              <select name="" id="">
+              <select name="botSpeed" id="botSpeed">
                 <option value="">chosse a bot speed</option>
                 <option value="">20 WPM</option>
                 <option value="">30 WPM</option>
@@ -84,13 +84,46 @@
               </select>
             </div>
             <div class="btn-groupe">
-              <button type="button">Add bot</button>
-              <button type="button">X</button>
+              <button type="button" id="addBot">Add bot</button>
+              <button type="button" id="remooveBot">X</button>
             </div>
           </div>
           <button class="start">Start</button>
         </div>
+        <!-- game place  -->
+        <div class="game-container">
+          <div class="race-container">
+  
+            <div class="player">
+              <div class="player-name">
+                <p>you <span class="square"></span></p>
+                
+              </div>
+  
+            </div>
+  
+            <div class="race">
+              <div class="inner-race">
+                <img src="" alt="" class="cars">
+
+              </div>
+  
+            </div>
+  
+            <div class="race-counter">
+              <div class="counter">
+                <div class="counter-conter">
+                  <p>you <span class="square"></span></p>
+                  
+                </div>
+    
+              </div>
+  
+            </div>
+          </div>
+        </div>
       </div>
+      
     </div>
     <script type="module" src="./js/dom_element.js"></script>
    
