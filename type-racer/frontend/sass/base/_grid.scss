@@ -11,17 +11,17 @@
 }
 .header{
     grid-area: h;
-    background-color: $primary-color;
+ 
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid   #e2dad7;;
 }
 .sidebar{
     grid-area: s;
-    background-color:  $primary-color;
-    border-right: 1px solid black;
+    
+    border-right: 1px solid  #e2dad7;
     overflow-y: scroll;
     max-height: calc(100vh - 80px);
     display: flex ;
@@ -31,7 +31,7 @@
 }
 .main{
     grid-area: m;
-    background-color:  $primary-color;
+  
     
     
 }

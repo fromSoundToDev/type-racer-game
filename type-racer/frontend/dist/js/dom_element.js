@@ -70,10 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     };
+    const handleYouVsComputer = () => {
+        if (window.getComputedStyle(lunchCardEl).display === 'flex'&& window.getComputedStyle(gameContainerEl).display==='none') {
+            lunchCardEl.style.display = 'none';
+            gameContainerEl.style.display = 'flex';
+
+        }
+    };
 
     // adding events to the dom elements
     badgeTrainEL.addEventListener('click', showTrainCard);
     badgeBotEL.addEventListener('click', showBotCard);
     badgeCustomEL.addEventListener('click', showCustomCard);
     startNormalRaceEl.addEventListener('click', handleNormalRace);
+    startYouVsComputerEl.addEventListener('click',handleYouVsComputer)
 });

@@ -7,6 +7,7 @@ body {
   color: #000000;
   height: 100vh;
   font-family: poppins;
+  background-color: #1c8ea4;
 }
 
 a {
@@ -55,18 +56,16 @@ img {
 
 .header {
   grid-area: h;
-  background-color: #ffffff;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e2dad7;
 }
 
 .sidebar {
   grid-area: s;
-  background-color: #ffffff;
-  border-right: 1px solid black;
+  border-right: 1px solid #e2dad7;
   overflow-y: scroll;
   max-height: calc(100vh - 80px);
   display: flex;
@@ -76,14 +75,13 @@ img {
 
 .main {
   grid-area: m;
-  background-color: #ffffff;
 }
 
 .header .title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000000;
-  background-color: bisque;
+  color: #e2dad7;
+  background-color: #04323a;
   padding: 0.5rem;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -103,7 +101,7 @@ img {
 
 /* Thumb (scroll handle) */
 .sidebar::-webkit-scrollbar-thumb {
-  background: bisque; /* Gray scroll thumb */
+  background: #04323a; /* Gray scroll thumb */
 }
 
 /* Thumb on hover */
@@ -123,8 +121,8 @@ img {
 .badge {
   width: 90%;
   min-height: 300px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #e2dad7;
+  color: #04322a;
   margin: 1rem 0;
   border-radius: 10px;
   display: flex;
@@ -141,6 +139,8 @@ img {
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
+  background-color: #04323a;
+  color: #e2dad7;
 }
 
 .badge-content {
@@ -163,11 +163,12 @@ img {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  background-color: bisque;
+  background-color: #04323a;
+  color: #e2dad7;
 }
 .badge-btn:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #e2dad7;
+  color: #04322a;
   cursor: pointer;
 }
 
@@ -256,7 +257,8 @@ img {
   position: relative;
 }
 .player .player-name p {
-  background-color: bisque;
+  background-color: #04323a;
+  color: #e2dad7;
   display: inline-block;
   position: relative;
   padding: 10px 40px;
@@ -269,7 +271,7 @@ img {
   height: 0;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-left: 20px solid bisque;
+  border-left: 20px solid #04323a;
   position: absolute;
   top: 50%;
   right: -20px;
@@ -278,13 +280,12 @@ img {
 
 .race {
   width: 70%;
-  height: 80px;
-  background-color: white;
-  border: 3px solid black;
+  height: 85px;
+  border: 5px solid #04323a;
   border-radius: 8px;
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
   padding: 8px 8px;
-  background-color: bisque;
+  background-color: #e2dad7;
   overflow: hidden;
 }
 .race .inner-race {
@@ -316,18 +317,19 @@ img {
   position: relative;
 }
 .race-counter .counter .wordCounter {
-  background-color: bisque;
+  background-color: #04323a;
   display: inline-block;
   position: relative;
   padding: 10px 40px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
+  color: #e2dad7;
 }
 .race-counter .counter .wordCounter .square {
   width: 12px;
   height: 12px;
-  background-color: bisque;
+  background-color: #04323a;
   position: absolute;
   top: 50%;
   left: -6px;
@@ -353,6 +355,7 @@ img {
   width: 100%;
   height: 100%;
   display: none;
+  flex-direction: column;
 }
 .game-container .race-container {
   width: 100%;
