@@ -3,7 +3,36 @@
 
 .race-counter{
     width: 18%;
-    height: 80px;
-    border-radius: 8px;
-    background-color: burlywood;
+
+    .counter{
+
+        height: 80px;
+        width: 100%;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        position: relative;
+        
+
+        .wordCounter {
+            background-color: bisque;
+            display: inline-block;
+            position: relative;
+            padding: 10px 40px; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+      
+            .square {
+                width: 12px;
+                height: 12px;
+                background-color: bisque;
+                position: absolute;
+                top: 50%;
+                left: -6px; 
+                transform: translateY(-50%) rotate(45deg);
+            }
+          }
+    
+    }
 }
