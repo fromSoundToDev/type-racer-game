@@ -248,9 +248,11 @@ img {
   color: #ffffff;
 }
 
+.player {
+  width: 18%;
+}
 .player .player-name {
   height: 80px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,6 +261,7 @@ img {
 .player .player-name p {
   background-color: #04323a;
   color: #e2dad7;
+  font-size: small;
   display: inline-block;
   position: relative;
   padding: 10px 40px;
@@ -359,6 +362,73 @@ img {
 }
 .game-container .race-container {
   width: 100%;
+}
+
+.main-word-box {
+  width: 100%;
+  margin-top: 30px;
+}
+.main-word-box .word-box {
+  width: 97%;
+  height: 220px;
+  margin: auto;
+  background-color: bisque;
+  border-radius: 8px;
+  border: 5px solid #04323a;
+  overflow: hidden;
+}
+.main-word-box .word-box #client-text {
+  width: 100%;
+  height: 55px;
+  padding: 5px;
+  background-color: #e2dad7;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+.main-word-box .word-box #word {
+  background-color: #e2dad7;
+  width: 100%;
+  height: 75%;
+  padding: 5px;
+  position: relative;
+  border-bottom: 5px solid #04323a;
+  font-weight: bold;
+  word-spacing: 10px;
+  line-height: 2;
+}
+.main-word-box .word-box #word #counter-box {
+  padding: 5px;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background-color: #04323a;
+  color: #e2dad7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 0 0 8px;
+  text-align: center;
+  padding-top: 20px;
+}
+.main-word-box #leave {
+  width: 97%;
+  height: 50px;
+  margin: auto;
+  border: 5px solid #04323a;
+  border-radius: 8px;
+  background-color: #04323a;
+  color: #e2dad7;
+  text-align: center;
+  padding-top: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.main-word-box #leave:hover {
+  background-color: #e2dad7;
+  color: #04323a;
 }
 
 /*# sourceMappingURL=index.css.map */

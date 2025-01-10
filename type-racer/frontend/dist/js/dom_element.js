@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const startYouVsComputerEl = document.querySelector('.start-you-vs-computer');
     const startCustomRace = document.querySelector('.start-custom-race');
 
+    // word box elements
+
+    const wordEl = document.getElementById('word')
+
   
 
     // functions that fill the card
@@ -77,6 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     };
+    const handleCustomRace = () => {
+        if (window.getComputedStyle(lunchCardEl).display === 'flex'&& window.getComputedStyle(gameContainerEl).display==='none') {
+            lunchCardEl.style.display = 'none';
+            gameContainerEl.style.display = 'flex';
+
+        }
+    };
 
     // adding events to the dom elements
     badgeTrainEL.addEventListener('click', showTrainCard);
@@ -84,4 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
     badgeCustomEL.addEventListener('click', showCustomCard);
     startNormalRaceEl.addEventListener('click', handleNormalRace);
     startYouVsComputerEl.addEventListener('click',handleYouVsComputer)
+    startCustomRace.addEventListener('click',handleCustomRace)
 });

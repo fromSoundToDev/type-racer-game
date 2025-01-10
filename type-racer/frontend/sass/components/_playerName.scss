@@ -2,18 +2,22 @@
 @use '../base/mixins' as *;
 
 .player {
+  
+  width: 18%;
     .player-name {
      
       height: 80px;
-      width: 100%;
+     
       display: flex; 
       align-items: center; 
       justify-content: center; 
       position: relative;
+      
   
       p {
         background-color: #04323a;
         color: #e2dad7;
+        font-size: small;
         display: inline-block;
         position: relative;
         padding: 10px 40px; 
