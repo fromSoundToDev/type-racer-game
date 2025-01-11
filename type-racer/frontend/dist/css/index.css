@@ -116,6 +116,30 @@ img {
 
 .main {
   padding: 10px;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: rgba(180, 179, 179, 0.9647058824); /* Light gray background */
+}
+
+/* Thumb (scroll handle) */
+.main::-webkit-scrollbar-thumb {
+  background: #04323a; /* Gray scroll thumb */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+}
+
+/* Buttons (optional, for older designs) */
+::-webkit-scrollbar-button {
+  background: rgba(255, 255, 255, 0.7294117647);
 }
 
 .badge {
@@ -386,6 +410,7 @@ img {
   font-weight: bold;
   outline: none;
   border: none;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.495);
 }
 .main-word-box .word-box #word {
   background-color: #e2dad7;
